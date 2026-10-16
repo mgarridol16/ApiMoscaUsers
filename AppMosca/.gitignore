@@ -1,0 +1,58 @@
+# ==========================================
+# Archivos del Sistema Operativo (macOS)
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ==========================================
+# Entorno y Configuración Sensible
+# ==========================================
+# Ignorar credenciales reales de base de datos y mail
+.env
+.env.local
+.env.development
+.env.production
+
+# PERMITIR el archivo de plantilla
+!.env.example
+
+# ==========================================
+# IDEs y Editores de Código
+# ==========================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PhpStorm, IntelliJ)
+.idea/
+*.iws
+*.iml
+
+# ==========================================
+# Gestor de Dependencias (Composer / PHP)
+# ==========================================
+# Si utilizas composer en el futuro
+/vendor/
+
+# PHPMailer instalado manualmente o por composer
+# (Descomenta la siguiente línea si phpmailer lo gestionas como librería externa)
+# /phpmailer/
+
+# ==========================================
+# Archivos Temporales, Logs y Entregas
+# ==========================================
+*.log
+*.tmp
+*.temp
+
+# Archivos de exportación temporal/entregas locales en PDF o compilados
+*.pdf
+
+# ==========================================
+# Caché y Archivos de Compilación
+# ==========================================
+.phpunit.result.cache
