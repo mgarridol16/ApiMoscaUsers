@@ -14,10 +14,27 @@
         {
           "name": "Crear tablero de parttida",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tamano\": 10,\n  \"intentos\": 5,\n  \"nameUser\": \"Manolito\",\n  \"pass\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/crear",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "crear"
+              ]
             }
           },
           "response": []
@@ -25,10 +42,27 @@
         {
           "name": "Jugar un turno",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"casilla\": 5,\n  \"nameUser\": \"Manolito\",\n  \"pass\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                ""
+              ]
             }
           },
           "response": []
@@ -36,10 +70,27 @@
         {
           "name": "Registrar un usuario",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"Manolito\",\n  \"pass\": \"123456\",\n  \"email\": \"examplexito@mail.com\",\n  \"edad\": 40\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "usuarios"
+              ]
             }
           },
           "response": []
@@ -47,10 +98,27 @@
         {
           "name": "loguearse",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nameUser\": \"miguel\",\n    \"pass\": \"1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "login"
+              ]
             }
           },
           "response": []
@@ -65,8 +133,25 @@
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"Manolito\",\n  \"pass\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/intentos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "intentos"
+              ]
             }
           },
           "response": []
@@ -76,8 +161,25 @@
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"miguel\",\n  \"pass\": \"1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "usuarios"
+              ]
             }
           },
           "response": []
@@ -87,8 +189,26 @@
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"miguel\",\n  \"pass\": \"1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/usuarios/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "usuarios",
+                "6"
+              ]
             }
           },
           "response": []
@@ -101,10 +221,27 @@
         {
           "name": "Rendirse en la partidaequest",
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"Miguelito\",\n  \"pass\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/rendirse",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "rendirse"
+              ]
             }
           },
           "response": []
@@ -112,10 +249,28 @@
         {
           "name": "Modificar datos de un usuario",
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"miguel\",\n  \"pass\": \"1234\",\n  \"edad\": 29,\n  \"nuevoNombre\": \"miguel_nuevo\",\n  \"nuevaPass\": \"5678\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/usuarios/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "usuarios",
+                "6"
+              ]
             }
           },
           "response": []
@@ -128,10 +283,28 @@
         {
           "name": "Eliminar un usuario",
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameUser\": \"miguel\",\n  \"pass\": \"1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8080/usuarios/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "usuarios",
+                "5"
+              ]
             }
           },
           "response": []
